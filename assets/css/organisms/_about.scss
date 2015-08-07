@@ -1,0 +1,47 @@
+
+
+//ABOUT
+
+
+.about_studio {
+	padding:150px 0px 0px 0px;
+}
+
+.about_studio--article{
+	position: relative;
+}
+
+
+// BUSINESS
+
+
+.business{
+	clear:both;
+	padding: 150px 0px 150px 0px;
+	background: $color_navy;
+	h2{
+		margin-bottom: 20px;
+	}
+	a{
+		font-family: $font_sans_serif;
+		display:block;
+		margin-top: 10px;
+		@include transition(.3s);
+		font-size: 1.5rem;
+		text-transform: lowercase;
+		letter-spacing: .11rem;
+		&:hover{
+			color:$color_red;
+		}
+	}
+}
+
+
+@include  screen-tablet--portait {
+
+	.about_studio {
+		padding:50px 0px 0px 0px;
+	}
+
+    
+}

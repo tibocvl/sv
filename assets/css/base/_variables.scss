@@ -1,0 +1,79 @@
+
+
+
+html { font-size: 62.5%; font-weight: 200;text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;} 
+
+
+
+
+@include font-face("MaisonNeue", "../font/maison/MaisonNeue-Medium");
+
+
+@include font-face("Straat", "../font/acta/Staat-Bold-webfont");
+
+
+
+
+.container{
+	max-width:1800px;
+}
+
+.block--center{
+	margin:0px auto 0px auto;
+}
+
+.clearfix{
+	clear:both;
+}
+
+
+
+// Font weights
+
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Fonts
+
+$font_sans_serif: MaisonNeue, sans-serif;
+$font_serif: Straat, serif;
+
+
+// Colors
+
+$color_red: #E6302E;
+$color_blue: #747C83;
+$color_navy: #171A20;
+$color_gray: #F6F6F6;
+
+$color_middle_dark: 40%;
+$color_middle_light: 40%;
+$color_light: 70%;
+$color_dark: 20%;
+
+
+
+//lighten($color, $amount)
+//darken($color, $amount)
+
+
+// General Fonts
+
+$font-size: 1.7rem;
+$line-height: 2.8rem;
+
+$font-size--title1:5.5rem;
+$font-size--title2:4rem;
+$font-size--title3:2.6rem;
+$font-size--title4:1.8rem;
+
+::-moz-selection { color: #fff;  background: $color_red; }
+::selection      { color: #fff;  background: $color_red; } 
+
+body{
+	background: lighten(black, $color_dark);
+	font-family: $font_serif;
+}

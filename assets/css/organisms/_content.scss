@@ -1,0 +1,40 @@
+
+
+.separator{
+	display:block;
+	width:40px;
+	height: 1px;
+	float: right;
+	background: lighten($color_navy , $color_light);
+	margin-bottom: 60px;
+}
+
+
+.content--1{
+	padding: 60px 0px 100px 0px;
+	h2{
+		margin-bottom: 60px;
+	}
+}
+
+.content--list{
+	padding: 100px 0px 100px 0px;
+}
+
+
+
+@include  screen-tablet--portait {
+
+	.content--1{
+		padding: 60px 0px 60px 0px;
+		
+	}
+	.separator{
+		display:none;
+	}
+
+	.content--list{
+		padding: 100px 0px 00px 0px;
+	}
+    
+}

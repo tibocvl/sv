@@ -1,0 +1,27 @@
+
+
+//IMG SLIDE
+
+
+.imgslide {
+	position:relative;
+	width:100%;
+	height:auto;
+	margin-bottom: 60px;
+}
+
+
+.imgslide--img{
+	position: relative;
+	width:100%;
+}
+
+.current_img{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+
+
+

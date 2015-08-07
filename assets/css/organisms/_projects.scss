@@ -1,0 +1,104 @@
+
+
+.projects_section{
+
+}
+
+.project{
+	width: 33.33333%;
+	height: 100%;
+	float:left;
+	position:relative;
+	&:hover{
+		background: $color_blue;
+		img{
+			opacity: 0;
+		}
+		h3{
+			color:#fff;
+		}
+	}
+	a{
+		height: 100%;
+		width:100%;
+		display:block;
+		color:$color_navy;
+		&:hover{
+			h3{
+				color:#fff;
+			}
+		}
+	}
+	img{
+		width:100%;
+		display:block;
+		z-index: -10000;
+	}
+	h3{
+		position: absolute;
+		top:20px;
+		left:20px;
+	}
+}
+
+.container--case{
+	background: #fff;
+	overflow:hidden;
+}
+
+.project_description{
+	background: #fff;
+	padding:220px 40% 180px 5%;
+	width:calc(100% - 45%);
+}
+
+
+/* ---- isotope ---- */
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid--1{
+	width: 100%;
+}
+.grid--2{
+	width: 50%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+@include  screen-tablet--portait {
+
+	.project{
+		width:50%;
+    }
+}
+
+
+@include screen-mobile--landscape  {
+
+	.project{
+		width:100%;
+    }
+}
+

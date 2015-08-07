@@ -1,0 +1,139 @@
+
+
+
+
+// TYPOGRAPHY
+
+a{
+	color:$color_navy;
+	@include transition(.3s);
+	&:hover{
+		color:$color_red;
+	}
+}
+
+.center{
+	text-align:center;
+}
+.left{
+	text-align:left;
+}
+.right{
+	text-align:right;
+}
+
+.uppercase{
+	text-transform:uppercase;
+}
+
+.lowercase{
+	text-transform:lowercase;
+}
+
+.serif{
+	font-family: $font_serif;
+}
+
+.sans_serif{
+	font-family: $font_sans_serif;
+}
+
+.title_size1{
+	font-size:$font-size--title1;
+}
+
+.title_size2{
+	font-size:$font-size--title2;
+}
+
+.title_size3{
+	font-size:$font-size--title3;
+}
+
+.title_size4{
+	font-size:$font-size--title4;
+}
+
+.title_span{
+	font-size:1.4rem;
+	margin: -.5rem 0px 0px 0px;
+	display:block;
+	letter-spacing:0rem;
+}
+
+.font_dark{
+	color:$color_navy;
+}
+
+.font_mdark{
+	color:$color_blue;
+}
+.font_light{
+	color:#fff;
+}
+
+
+h1{
+	font-family: $font_serif;
+	font-weight: 500;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2{
+	font-family: $font_serif;
+	font-weight: 500;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h3{
+	font-family: $font_sans_serif;
+	font-weight: 200;
+	letter-spacing:.1rem;
+	font-size:$font-size;
+	line-height: $line-height;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul li{
+	font-family: $font_sans_serif;
+	font-size:$font-size;
+	line-height: $line-height;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+	font-family: $font_sans_serif;
+	font-size:$font-size;
+	line-height: $line-height;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+@include  screen-tablet--portait {
+
+	
+	.left{
+		text-align:center;
+	}
+	.right{
+		text-align:center;
+	}
+    
+}
+
+

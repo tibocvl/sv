@@ -1,0 +1,84 @@
+
+<!-- $title Salut -->
+
+<!-- @include _header -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.min.js"></script>
+	
+
+<div class="container container--case">
+
+
+
+  	<section class="project_description">
+		
+		<h1 class="title_size4 sans_serif uppercase font_mdark">Château Bayard</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</section>
+	<div class="grid">
+		<div class="grid-sizer"></div>
+
+		<section class="grid-item">
+			
+			<img src="<!-- @path  ch_bayard_4.jpg -->">
+
+		</section>
+
+		<section class="grid-item">
+			
+			<img src="<!-- @path  ch_bayard_3.jpg -->">
+
+		</section>
+
+		<section class="grid-item">
+			
+			<img src="<!-- @path  ch_bayard_1.jpg -->">
+
+		</section>
+
+		<section class="grid-item">
+			
+			<img src="<!-- @path  ch_bayard_3.jpg -->">
+
+		</section>
+
+		<section class="grid-item">
+			
+			<img src="<!-- @path  ch_bayard_1.jpg -->">
+
+		</section>
+
+	</div>
+
+
+	
+<script type="text/javascript">
+
+	$(document).ready( function() {
+	  // init Isotope
+	  var $grid = $('.grid').isotope({
+	    itemSelector: '.grid-item',
+	    percentPosition: true,
+	    masonry: {
+	      columnWidth: '.grid-sizer'
+	    }
+	  });
+	  // layout Isotope after each image loads
+	  $grid.imagesLoaded().progress( function() {
+	    $grid.isotope('layout');
+	  });  
+
+	});
+
+</script>
+	
+
+  
+<!-- @include _footer -->

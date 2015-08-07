@@ -1,0 +1,65 @@
+
+
+//HOME PROJECTS
+
+
+.home_projects--section{
+	padding: 150px 0px 0px 0px;
+	background: #fff;
+	color:#fff;
+	height: auto;
+	background: $color_navy;
+}
+
+.home_projects--pj{
+	position: relative;
+	float: right;
+	&:hover{
+		background: $color_blue;
+		img{
+			opacity:0;
+		}
+	}
+}
+
+.home_projects--h3{
+	position:absolute;
+	left:30px;
+	top:30px;
+	z-index: 1000;
+	color:#fff;
+	font-size: 1.5rem;
+}
+
+.home_projects--a{
+
+}
+
+.home_projects--img{
+	
+}
+
+
+
+
+@include  screen-tablet--portait {
+
+.home_projects--section{
+	padding: 80px 0px 0px 0px;
+	h2{
+		text-align: center;
+	}
+	h2:nth-child(2){
+		padding-bottom: 80px;
+	}
+}
+
+.home_projects--a{
+	height: 400px;
+	display:block;
+}
+    
+}
+
+
+

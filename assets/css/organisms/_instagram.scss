@@ -1,0 +1,106 @@
+
+
+//INSTAGRAM
+
+.instagram{
+	clear:both;
+	ul{
+		list-style: none;
+		padding: 0px;
+		position:relative;
+		overflow:hidden;
+		&:hover{
+			#instagram--tagsempty{
+				opacity: 0;
+			}
+		}
+		li{
+			width:25%;
+			display:block;
+			float: left;
+			margin-bottom: -20px;
+			&:hover{
+				.instagram--tags{
+					opacity:1;
+					@include transform(translateY(0px));
+				}
+			}
+			a{
+				position: relative;
+				display:block;
+				height: auto;
+				&:hover{
+					span{
+						background: rgba($color_blue, 1);
+					}
+					svg{
+						opacity:.1;
+					}
+				}
+				img{
+					width:100%;
+				}
+				span{
+					display:block;
+					width:100%;
+					height:calc(100% - 10px);
+					background: rgba($color_blue, .8);
+					position:absolute;
+					@include transition(.2s cubic-bezier(.32, 1, .53, .8));
+				}
+				svg{
+					width:30px;
+					opacity:0;
+					top:50%;
+					left: 50%;
+					display:block;
+					position:absolute;
+					margin: -15px 0px 0px -15px;
+				}
+			}
+		}
+	}
+}
+
+
+#instagram--tagsempty{
+	opacity: 1;
+	&:hover{
+		display:block;
+	}
+}
+
+.instagram--tags{
+	position:absolute;
+	z-index: 100000;
+	top:50%;
+	left:50%;
+	width:250px;
+	margin-left: -125px;
+	text-align:center;
+	font-family: $font_serif;
+	color:#fff;
+	font-size: 4rem;
+	line-height: 4rem;
+	display: inline-block;
+	opacity: 0;
+	cursor: pointer;
+	@include transition(.4s cubic-bezier(.32, 1, .53, .8));
+	@include transform(translateY(-20px));
+	&:hover{
+		display:none;
+	}
+}
+
+
+@include  screen-tablet--portait {
+
+	.instagram{
+		ul{
+			li{
+				width:50%;
+			}
+		}
+	}
+
+}
